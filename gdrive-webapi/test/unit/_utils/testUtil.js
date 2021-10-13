@@ -1,9 +1,22 @@
+import { jest } from '@jest/globals'
 import { Readable, Writable, Transform } from 'stream'
 export default class TestUtil {
+    static mockDateNow(mockImplementationPeriods) {
+        const now = jest.spyOn(global.Date, global.Date.now.name)
+
+        mockImplementationPeriods.forEach(time => {
+            now.mockReturnValueOnce(time);
+        })
+    }
+
+    static getTimeFromDate(dateString) {
+        return new Date(dateString).getTime()
+    }
 
     static generateReadableStream(data) {
         return new Readable({
-            async read() {
+            objectMode: true,
+            read() {
                 for (const item of data) {
                     this.push(item)
                 }
@@ -12,23 +25,23 @@ export default class TestUtil {
             }
         })
     }
-
-    static generateWritebleStream(onData) {
+    static generateWritableStream(onData) {
         return new Writable({
-            write(chunck, encoding, cb) {
-                onData(chunck)
-                cb(null, chunck)
+            objectMode: true,
+            write(chunk, encondig, cb) {
+                onData(chunk)        
+                cb(null, chunk)
             }
         })
     }
 
     static generateTransformStream(onData) {
         return new Transform({
-            transform(chunck, enconding, cb) {
-                onData(chunck)
-                cb(null, chunck)
+            objectMode: true,
+            transform(chunk, enconding, cb) {
+                onData(chunk)
+                cb(null, chunk)
             }
         })
     }
-    
 }
