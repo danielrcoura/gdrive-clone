@@ -10,7 +10,7 @@ import { resolve } from 'path'
 import { pipeline } from 'stream/promises'
 import { logger } from '../../src/logger.js'
 import UploadHandler from '../../src/uploadHandler'
-import TestUtil from './_utils/testUtil'
+import TestUtil from '../_utils/testUtil'
 
 describe('#UploadHandler test suite', () => {
     const ioObj = {
