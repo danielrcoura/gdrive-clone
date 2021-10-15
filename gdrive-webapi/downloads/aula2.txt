@@ -1,0 +1,31 @@
+00:00 - abertura
+00:18 - sobre a aula de hoje
+00: 54 - o que vimos na primeira aula
+2:58 - entendendo as Node.js Streams
+8:34 - versão do Node.JS e bibliotecas utilizadas no projeto
+9:00 - porquê usaremos o Busboy no projeto
+10:00 - configurando o projeto da aula
+13:16 - analizando a documentação do Busboy
+15:30 - teste unitário e implementação para receber stream de arquivos
+35:50 - testando alterações
+37:45 - teste unitário e implementação para salvar os arquivos stream em disco
+01:01:56 - testando alterações
+01:02:17 - teste unitário e implementação para notificar progresso de armazenamento 
+01:16:55 - testando alterações e realizando ajustes
+01:19:08 - implementando e testando back pressure
+01:36:16 - testando alterações e realizando ajustes
+01:37:17- teste unitário e implementação para emitir as mensagens de processamento de acordo com o delay pré definido
+01:44:24 - testando alterações e realizando ajustes
+01:56:04 - ajustando os tempos de envio das mensagens
+01:59:20 - testando alterações
+01:59:39 - recaptulando o teste unitário de delay de envio de mensagens
+2:02:15 - entenda a decisão de usar o Socket.io para otificar progresso do arquivo
+02:04:28 - teste de integração do recebimento de stream de arquivos e salvar em disco
+02:23:45 - testando alterações
+02:24:28 - teste unitário para validar a chamada dos métodos
+02:26:16 - testando alterações e realizando ajustes 
+02:32:35 - alcançando 100% de cobertura de testes no backend
+02:33:00 - atualizando o Readme do projeto
+02:33:22 - conclusões sobre a aula e porquê a index.js não entra nos testes 
+02:34:23 - sobre a próxima aula e recados importantes
+02:36:17 - encerramento
