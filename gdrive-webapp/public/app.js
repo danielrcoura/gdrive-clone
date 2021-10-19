@@ -1,5 +1,5 @@
 import AppController from "./src/appController.js";
-import ConnectionManager from "./src/connectionMannager.js";
+import ConnectionManager from "./src/connectionManager.js";
 import DragAndDropManager from "./src/dragAndDopManager.js";
 import ViewManager from "./src/viewManager.js";
 
