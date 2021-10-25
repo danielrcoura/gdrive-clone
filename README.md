@@ -1,6 +1,6 @@
 # Google Drive Clone
 
-Este projeto foi desenvolvid a partir do conteúdo da 5ª Semana Javascript Expert feita por ErickWendel.
+Este projeto foi desenvolvido a partir do conteúdo da 5ª Semana Javascript Expert feita por ErickWendel.
 
 Trata-se de uma aplicação Web, onde é possível fazer upload arquivos grandes e visualizá-los. Foi utilizado NodeJS no backend e JavaScript puro no frontend.
 
